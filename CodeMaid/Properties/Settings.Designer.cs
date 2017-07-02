@@ -1991,5 +1991,17 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Reorganizing_ReverseAccessLevel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Reorganizing_FirstByStatic {
+            get {
+                return ((bool)(this["Reorganizing_FirstByStatic"]));
+            }
+            set {
+                this["Reorganizing_FirstByStatic"] = value;
+            }
+        }
     }
 }

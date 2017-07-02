@@ -89,7 +89,9 @@ namespace SteveCadwallader.CodeMaid.Helpers
                 calc += typeOffset * 10000;
             }
 
-            calc += (explicitOffset * 1000) + (constantOffset * 100) + (staticOffset * 10) + readOnlyOffset;
+            staticOffset *= Settings.Default.Reorganizing_FirstByStatic ? 1000000 : 10;
+
+            calc += (explicitOffset * 1000) + (constantOffset * 100) + staticOffset + readOnlyOffset;
 
             return calc;
         }

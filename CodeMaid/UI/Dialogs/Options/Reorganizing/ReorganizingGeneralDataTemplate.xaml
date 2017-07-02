@@ -20,6 +20,7 @@
                         <RadioButton Content="public to private" IsChecked="{Binding ReverseOrderByAccessLevel, Converter={x:Static cnv:BooleanInverseConverter.Default}}" />
                         <RadioButton Content="private to public" IsChecked="{Binding ReverseOrderByAccessLevel}" />
                     </StackPanel>
+					<CheckBox Content="Place static members first" IsChecked="{Binding PlaceStaticMembersFirst}" />
                 </StackPanel>
             </GroupBox>
 

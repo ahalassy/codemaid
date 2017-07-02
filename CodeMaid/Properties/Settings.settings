@@ -494,5 +494,8 @@
     <Setting Name="Reorganizing_ReverseAccessLevel" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="Reorganizing_FirstByStatic" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -101,6 +101,18 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Reorganizing
         }
 
         /// <summary>
+        /// Gets or sets a value indicating whether place static members first.
+        /// </summary>
+        /// <value>
+        /// <c>true</c> if place static members first; otherwise, <c>false</c>.
+        /// </value>
+        public bool PlaceStaticMembersFirst
+        {
+            get { return GetPropertyValue<bool>(); }
+            set { SetPropertyValue(value); }
+        }
+
+        /// <summary>
         /// Gets or sets the flag indicating if reorganizing should be run at the start of cleanup.
         /// </summary>
         public bool RunAtStartOfCleanup
